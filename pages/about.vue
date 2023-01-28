@@ -1,25 +1,6 @@
 <template>
     <div>
-        <header>
-            <nav>
-              <NuxtLink to="/">Home</NuxtLink>
-              <NuxtLink to="/about">About</NuxtLink>
-            </nav>
-        </header>
-        <p class="main">about</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam molestias hic placeat eaque ullam nulla enim unde voluptate totam iste!</p>
+      <p>About</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque esse nobis excepturi ullam suscipit amet distinctio voluptatem temporibus aliquid, deleniti quas magni delectus doloribus cupiditate eaque expedita eligendi, placeat ad praesentium ducimus. Quia similique distinctio commodi esse nisi rem voluptatum non necessitatibus tempore praesentium dicta eveniet libero voluptate odio temporibus mollitia, iste labore sunt. Maxime quas possimus totam quidem unde. Beatae, repudiandae consequuntur. Illum sequi, at molestiae accusantium expedita sed laborum ut recusandae beatae repellat quia numquam corrupti officia voluptates. Totam, natus. Id incidunt ipsa porro accusamus quaerat alias. Maiores minus autem sed velit aliquam, explicabo incidunt modi neque, fuga laborum labore nihil, at soluta nemo commodi tempora nesciunt assumenda dolore. Ex molestiae rem qui facilis nulla rerum ipsum obcaecati, sunt nesciunt aliquid. Facere amet assumenda adipisci exercitationem at culpa, cumque autem repudiandae temporibus nostrum minima. Non saepe in sit omnis magni aperiam rerum aspernatur necessitatibus nesciunt voluptates provident ut eligendi nisi velit illum repellendus quas obcaecati nam blanditiis ea sunt officiis, doloribus deserunt! Eaque iure deserunt repellat et, corporis, laudantium illo dolor necessitatibus blanditiis provident vero! Voluptas magnam consectetur minus corrupti sunt laborum porro quo fuga, aut debitis facere, animi impedit commodi fugiat atque eveniet a libero deleniti cumque?</p>
     </div>
   </template>
-
-<style scoped>
-header{
-  background-color: antiquewhite;
-  height: 10vh;
-}
-.main{
-  text-align: center;
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
-</style>
