@@ -4,6 +4,6 @@
         <componentA />
         <componentB />
         <compABinC />
-
+        <ck />
     </div>
 </template>
