@@ -7,6 +7,7 @@
               <NuxtLink to="/about">About</NuxtLink>
               <NuxtLink to="/components">Components</NuxtLink>
               <NuxtLink to="/fetch">Fetch</NuxtLink>
+              <NuxtLink to="/functions">Functions</NuxtLink>
             </nav>
             <p>BODY background color from main.css that need to be included in nuxt.config.js</p>
             <p>default layer ends here</p>
