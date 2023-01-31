@@ -10,6 +10,7 @@
               <NuxtLink to="/functions">Functions</NuxtLink>
             </nav>
             <p>BODY background color from main.css that need to be included in nuxt.config.js</p>
+            <p>Body background color override by styles in pages functions.vue</p>
             <p>default layer ends here</p>
         </header>
         <Nuxt />
