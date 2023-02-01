@@ -1,7 +1,7 @@
 <template>
    <div>
     <client-only placeholder="loading...">
-       <vue-editor v-model="content"></vue-editor>
+       <vue-editor :editorToolbar="customToolbar" v-model="content"></vue-editor>
     </client-only>
        <p>asd</p>
    </div>
@@ -18,7 +18,12 @@
   
     data() {
         return {
-          content: '<h1>Some initial content</h1>'  
+          content: 'Some initial content',
+          customToolbar: [
+            ['bold', 'italic', 'underline'],
+            [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+            [],
+          ]  
         }
       }
     }
