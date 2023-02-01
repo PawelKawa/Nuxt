@@ -12,9 +12,10 @@
     <button @click="age--">age -1</button>
     <button @click="toggleName">Change name</button>
     <p v-show="!visible">Click show to see.</p>
+    
     <hr>
-    <p>v-for :key v-bind</p>
-<a v-bind:href="url">google.com v-bind:href dynamic classes</a>
+    <p>v-for :key v-bind dynamic classes</p>
+<a v-bind:href="url">google.com v-bind:href </a>
 
 <div v-if="showBooks">
   <ul>

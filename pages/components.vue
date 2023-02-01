@@ -7,3 +7,9 @@
         <ck />
     </div>
 </template>
+
+<style>
+  .ck-content{
+    background-color: rgb(228 228 231)!important;
+  }
+</style>
