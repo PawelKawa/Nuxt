@@ -5,7 +5,10 @@
       <client-only placeholder="loading...">
         <ckeditor-nuxt v-model="contentHolder" :config="editorConfig" />
       </client-only>
-    <p class="text-right mt-2">{{ contentHolder.length }}/555</p>
+    <p class="text-right mt-2">{{ contentHolder.length }} chars</p>
+    <p>{{ contentHolder }}</p>
+    <div v-html="contentHolder"></div>
+
     </div>
   </template>
   

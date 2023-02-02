@@ -1,44 +1,53 @@
 <template>
   <!DOCTYPE html>
-   <div>
-
+  <div>
     <client-only placeholder="loading...">
-       <vue-editor :editorToolbar="customToolbar" v-model="content"></vue-editor>
+      <vue-editor :editorToolbar="customToolbar" v-model="content"></vue-editor>
     </client-only>
 
-       <span class="katex">
-        <span class="katex-mathml">The KaTeX stylesheet is not loaded!</span>
-        <span class="katex-version rule">KaTeX stylesheet version: </span>
-      </span>
+    <p>{{ content }}</p>
+    <p>{{ content.length }} chars</p>
+    <div v-html="content"></div>
 
-   </div>
-  </template>
-  
-  <script>
-    import { VueEditor } from 'vue2-quill-editor';
-    import { katex } from 'katex';
-    import 'katex/dist/katex.min.css';
+    <span class="katex">
+      <span class="katex-mathml">The KaTeX stylesheet is not loaded!</span>
+      <span class="katex-version rule">KaTeX stylesheet version: </span>
+    </span>
+  </div>
+</template>
 
-    export default {
-  
-    components: {
-       VueEditor, katex
-    },
-  
-    data() {
-        return {
-          content: 'Some initial content',
-          customToolbar: [
-            ['bold', 'italic', 'underline'],
-            [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-            ['formula'],
-          ],
-        }
-      }
-    }
-  </script> 
+<script>
+import { VueEditor } from "vue2-quill-editor";
+import katex from "katex";
+import "katex/dist/katex.min.css";
+
+export default {
+  components: {
+    VueEditor,
+  },
+
+  data() {
+    return {
+      content: "Some initial content",
+      customToolbar: [
+        ["bold", "italic", "underline"],
+        [{ list: "ordered" }, { list: "bullet" }],
+        ["formula"],
+      ],
+      
+    };
+  },
+  mounted() {
+    window.katex = katex;
+  },
+};
+</script>
 
 <style>
-.katex-version {display: none;}
-.katex-version::after {content:"0.10.2 or earlier";}
+.katex-version {
+  display: none;
+}
+.katex-version::after {
+  content: "0.10.2 or earlier";
+}
 </style>
