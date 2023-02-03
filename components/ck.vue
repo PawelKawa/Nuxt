@@ -1,7 +1,7 @@
 <template>
     <div>
         <hr>
-        <p>ckeditor</p>
+        <p>ckeditor blowstack</p>
       <client-only placeholder="loading...">
         <ckeditor-nuxt v-model="contentHolder" :config="editorConfig" />
       </client-only>
@@ -24,7 +24,7 @@
     data() {
       return {
           editorConfig: {
-          toolbar:["SpecialCharacters","MathType",],
+          toolbar:["SpecialCharacters","MathType","Bold"],
           removePlugins: [
             "Title",
           //   "RemoveFormat",

@@ -1,5 +1,4 @@
 <template>
-  <!DOCTYPE html>
   <div>
     <client-only placeholder="loading...">
       <vue-editor :editorToolbar="customToolbar" v-model="content"></vue-editor>
@@ -7,12 +6,14 @@
 
     <p>{{ content }}</p>
     <p>{{ content.length }} chars</p>
-    <div v-html="content"></div>
+    <p v-html="content"></p>
 
+    <button @click="saveContent">renderToString?</button>
     <span class="katex">
       <span class="katex-mathml">The KaTeX stylesheet is not loaded!</span>
       <span class="katex-version rule">KaTeX stylesheet version: </span>
     </span>
+
   </div>
 </template>
 
@@ -28,7 +29,7 @@ export default {
 
   data() {
     return {
-      content: "Some initial content",
+      content: "a^2+b^2=c^2",
       customToolbar: [
         ["bold", "italic", "underline"],
         [{ list: "ordered" }, { list: "bullet" }],
@@ -37,6 +38,13 @@ export default {
       
     };
   },
+  methods: {
+    saveContent: function() {
+      let latex = "a^2+b^2=c^2";
+      let html = katex.renderToString(latex);
+      this.content = html;
+      }
+    },
   mounted() {
     window.katex = katex;
   },

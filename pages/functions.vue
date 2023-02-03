@@ -75,11 +75,6 @@ export default {
 
 <style>
    
-    body{
-      background: #eee;
-      max-width: 960px;
-      margin: 20px auto;
-    }
     li{
       list-style-type: none;
       background: #fff;

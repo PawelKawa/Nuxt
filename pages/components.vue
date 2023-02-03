@@ -5,6 +5,7 @@
         <componentB />
         <compABinC />
         <ck />
+        <other />
     </div>
 </template>
 
