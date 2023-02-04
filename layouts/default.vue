@@ -10,6 +10,7 @@
               <NuxtLink to="/functions">Functions</NuxtLink>
               <NuxtLink to="/quill">Quill</NuxtLink>
               <NuxtLink to="/ckeditor">Ckeditor</NuxtLink>
+              <NuxtLink to="/reactionTimer">reactionTimer</NuxtLink>
             </nav>
             <p>default layer ends here</p>
         </header>
